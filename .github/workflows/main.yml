@@ -39,8 +39,8 @@ jobs:
         ECR_REPOSITORY: dotnet-minimal-web-api-example
         IMAGE_TAG: dotnet-minimal-web-api-example
       run: |
-        docker build .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY     
+        docker build -t "myImage" .
+        docker push "myImage"     
     - name: Docker Build
       run: docker build .
     - name: Build
