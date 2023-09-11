@@ -34,6 +34,6 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: PublishedArtifacts
-        path: D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\dotnet-minimal-web-api-exampleI\**
+        path: D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\PublishedArtifacts\**
         if-no-files-found: error
     
