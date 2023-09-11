@@ -24,6 +24,8 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\DotNetMinimalAPIDemo
+    - name: Docker Build
+      run: docker build --no-restore
     - name: Build
       run: dotnet build --no-restore
     #- name: Test
