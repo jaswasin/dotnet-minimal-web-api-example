@@ -5,10 +5,10 @@ name: .NET
 
 on:
   push:
-    branches: ["master","release/QA","release/Production"]
+    branches: ["main","release/QA","release/Production"]
      
   pull_request:
-    branches: ["master","release/QA","release/Production"]
+    branches: ["main","release/QA","release/Production"]
      
 
 jobs:
