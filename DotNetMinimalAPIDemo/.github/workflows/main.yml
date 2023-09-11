@@ -23,7 +23,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\DotNetMinimalAPIDemo
     - name: Build
       run: dotnet build --no-restore
     #- name: Test
