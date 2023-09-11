@@ -27,15 +27,15 @@ jobs:
     - name: Docker Build
       run: docker build --no-restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\DotNetMinimalAPIDemo
     #- name: Test
       #run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\dotnet-minimal-web-api-exampleI\DotNetMinimalAPIDemo.csproj -c Release -o PublishedArtifacts  
+      run: dotnet publish D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\DotNetMinimalAPIDemo\DotNetMinimalAPIDemo.csproj -c Release -o PublishedArtifacts  
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
       with:
         name: PublishedArtifacts
-        path: D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\dotnet-minimal-web-api-exampleI\**
+        path: D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\PublishedArtifacts\**
         if-no-files-found: error
     
