@@ -6,7 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["DotNetMinimalAPIDemo.csproj", "."]
+COPY ["DotNetMinimalAPIDemo//DotNetMinimalAPIDemo.csproj", "."]
 RUN dotnet restore "./DotNetMinimalAPIDemo.csproj"
 COPY . .
 WORKDIR "/src/."
