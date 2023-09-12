@@ -45,7 +45,7 @@ jobs:
         IMAGE_TAG: dotnet-minimal-web-api-example
       run: |
         docker build -t "myimage" .
-        docker push "myimage"     
+        docker push jaswasin/mytest:"myimage"    
     - name: Docker Build
       run: docker build .
     - name: Build
