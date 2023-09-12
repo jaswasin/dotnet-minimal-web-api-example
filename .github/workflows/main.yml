@@ -45,7 +45,7 @@ jobs:
         IMAGE_TAG: dotnet-minimal-web-api-example
       run: |
         docker build -t jaswasin/myimage:latest .
-        docker login -u "jaswant1306@gmail.com" -p "dckr_pat_6knTuyeU0O1NbDjDOyDkr7m77EM" docker.io
+        #docker login -u "jaswant1306@gmail.com" -p "dckr_pat_6knTuyeU0O1NbDjDOyDkr7m77EM" docker.io
         docker push jaswasin/myimage:latest   
     - name: Docker Build
       run: docker build .
