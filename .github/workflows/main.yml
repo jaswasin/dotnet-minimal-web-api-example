@@ -46,7 +46,7 @@ jobs:
       run: |
         docker build -t dotnet-minimal-web-api-example .
         docker tag dotnet-minimal-web-api-example:latest 020494211308.dkr.ecr.us-east-1.amazonaws.com/dotnet-minimal-web-api-example:latest
-        #docker login -u "jaswant1306@gmail.com" -p "dckr_pat_6knTuyeU0O1NbDjDOyDkr7m77EM" docker.io
+        docker login -u "jaswant1306@gmail.com" -p "dckr_pat_6knTuyeU0O1NbDjDOyDkr7m77EM" docker.io
         docker push 020494211308.dkr.ecr.us-east-1.amazonaws.com/dotnet-minimal-web-api-example:latest   
     - name: Docker Build
       run: docker build .
