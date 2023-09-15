@@ -23,7 +23,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 7.0.x
     - name: Restore dependencies
       run: dotnet restore /home/jaswasin/actions-runner/_work/dotnet-minimal-web-api-example/dotnet-minimal-web-api-example/DotNetMinimalAPIDemo
     - name: Login to Docker Hub
