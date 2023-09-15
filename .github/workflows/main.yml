@@ -5,16 +5,16 @@ name: .NET
 
 on:
   push:
-    branches: ["linux","main","release/QA","release/Production"]
+    branches: ["SelfHosted-Linux","linux","main","release/QA","release/Production"]
      
   pull_request:
-    branches: ["linux","main","release/QA","release/Production"]
+    branches: ["SelfHosted-Linux","linux","main","release/QA","release/Production"]
      
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, X64]
 
     steps:
     - uses: actions/checkout@v3
