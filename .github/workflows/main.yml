@@ -57,7 +57,7 @@ jobs:
     - name: Publish
       run: dotnet publish D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\DotNetMinimalAPIDemo\DotNetMinimalAPIDemo.csproj -c Release -o PublishedArtifacts  
     - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: PublishedArtifacts
         path: D:\a\dotnet-minimal-web-api-example\dotnet-minimal-web-api-example\PublishedArtifacts\**
