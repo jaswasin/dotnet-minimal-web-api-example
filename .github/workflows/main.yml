@@ -42,6 +42,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
+          echo ${{ github.workspace }}
+          echo $GITHUB_WORKSPACE
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"D:/a/dotnet-minimal-web-api-example/dotnet-minimal-web-api-example" /o:"jaswasin" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
